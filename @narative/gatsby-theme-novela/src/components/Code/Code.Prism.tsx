@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
+import Prism from "prism-react-renderer/prism"
 import styled from "@emotion/styled";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import theme from "prism-react-renderer/themes/oceanicNext";
+
+// @ts-ignore
+(typeof global !== "undefined" ? global : window).Prism = Prism;
+require("prismjs/components/prism-swift");
 
 import Icons from "@icons";
 import mediaqueries from "@styles/media";
