@@ -48,6 +48,7 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
     <Section relative id="Articles__Hero">
       <HeadingContainer style={{ maxWidth: `${hero.maxWidth}px` }}>
         <HeroHeading dangerouslySetInnerHTML={{ __html: hero.heading }} />
+        <ReturnToMain href="https://getmosaic.io">getmosaic.io</ReturnToMain>
       </HeadingContainer>
       <SubheadingContainer>
         <Bio author={featuredAuthor} />
@@ -136,6 +137,11 @@ const HeroHeading = styled.h1`
   ${mediaqueries.phablet`
     font-size: 32px;
   `}
+`;
+
+const ReturnToMain = styled.a`
+  color: #73737d;
+  text-decoration: underline;
 `;
 
 const GridButton = styled.button<{ active: boolean }>`

@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/muinmomin/gatsby-theme-novela.git"
   },
-  "version": "0.13.3",
+  "version": "0.13.6",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
