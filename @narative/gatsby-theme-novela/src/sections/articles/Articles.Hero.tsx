@@ -48,7 +48,7 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
     <Section relative id="Articles__Hero">
       <HeadingContainer style={{ maxWidth: `${hero.maxWidth}px` }}>
         <HeroHeading dangerouslySetInnerHTML={{ __html: hero.heading }} />
-        <ReturnToMain href="https://getmosaic.io">getmosaic.io</ReturnToMain>
+        <ReturnToMain href="https://mosaicmoney.app">mosaicmoney.app</ReturnToMain>
       </HeadingContainer>
       <SubheadingContainer>
         <Bio author={featuredAuthor} />
